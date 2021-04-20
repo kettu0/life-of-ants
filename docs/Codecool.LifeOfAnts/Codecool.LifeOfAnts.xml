@@ -1,0 +1,425 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Codecool.LifeOfAnts</name>
+    </assembly>
+    <members>
+        <member name="T:Codecool.LifeOfAnts.Ants.Ant">
+            <summary>
+            Abstract class for ant
+            </summary>
+        </member>
+        <member name="P:Codecool.LifeOfAnts.Ants.Ant.AntColony">
+            <summary>
+            Gets or sets Ant Colony
+            </summary>
+        </member>
+        <member name="P:Codecool.LifeOfAnts.Ants.Ant.Symbol">
+            <summary>
+            Gets or sets symbol for ant
+            </summary>
+        </member>
+        <member name="P:Codecool.LifeOfAnts.Ants.Ant.Coordinates">
+            <summary>
+            Gets or sets ant coordinates
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Ant.MakeMove">
+            <summary>
+            Moves ants
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Ant.IsMoveValid(Codecool.LifeOfAnts.Position)">
+            <summary>
+            Checks validity of Worker move
+            </summary>
+            <param name="next"> next </param>
+            <returns>
+            Returns bool
+            </returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Ant.GetPosition">
+            <summary>
+            Gets position of the Queen
+            </summary>
+            <returns>
+            Returns Position
+            </returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Ant.GetSymbol">
+            <summary>
+            Gets symbol of the Queen
+            </summary>
+            <returns>
+            Returns character
+            </returns>
+        </member>
+        <member name="T:Codecool.LifeOfAnts.Ants.Drone">
+            <summary>
+            Drone class
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Drone.#ctor(Codecool.LifeOfAnts.Position)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Codecool.LifeOfAnts.Ants.Drone"/> class.
+            </summary>
+            <param name="position">position of the ant</param>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Drone.GetPosition">
+            <summary>
+            Gets position of an ant
+            </summary>
+            <returns>
+            Returns Position
+            </returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Drone.GetSymbol">
+            <summary>
+            Gets symbol of an ant
+            </summary>
+            <returns>
+            Returns character
+            </returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Drone.GetIsMating">
+            <summary>
+            Gets isMating of Drone
+            </summary>
+            <returns>Returns bool</returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Drone.GetMatingCountdown">
+            <summary>
+            Gets isMating of tge Queen
+            </summary>
+            <returns>Returns bool</returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Drone.MoveTowardsQueen">
+            <summary>
+            Moves Drone towards Queen
+            </summary>
+            <returns>Returns Position</returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Drone.ReachedQueen">
+            <summary>
+            Checking if Drone reached Queen
+            </summary>
+            <returns>Returns bool</returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Drone.TryMating">
+            <summary>
+            Drone tries mating with Queen
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Drone.ContinueMating">
+            <summary>
+            Drone contuines mating
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Drone.ResetPosition">
+            <summary>
+            Resets Drone poistion
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Drone.GetPositionAfterKickout">
+            <summary>
+             Sets new position after kickout
+            </summary>
+            <returns>Returns new Drone position</returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Drone.ToString">
+            <summary>
+            Drone to string
+            </summary>
+            <returns>
+            Returns Drone symbol as string
+            </returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Drone.MakeMove">
+            <summary>
+            Moves ants
+            </summary>
+        </member>
+        <member name="T:Codecool.LifeOfAnts.Ants.Queen">
+            <summary>
+            Queen class
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Queen.#ctor(Codecool.LifeOfAnts.Position)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Codecool.LifeOfAnts.Ants.Queen"/> class.
+            </summary>
+            <param name="position"> Position </param>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Queen.GetGoodMoodCountdown">
+            <summary>
+            Gets good mood countfown of the Queen
+            </summary>
+            <returns>
+            Returns int
+            </returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Queen.IsInGoodMood">
+            <summary>
+            Checks if Queen is in mood for mating
+            </summary>
+            <returns>
+            Returns bool
+            </returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Queen.Mate">
+            <summary>
+            Queen mates
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Queen.ToString">
+            <summary>
+             Queen to string
+             </summary>
+             <returns>
+             Returns Queens symbol as string
+             </returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Queen.MakeMove">
+            <summary>
+            Checks if Queen is ready for the mating
+            </summary>
+        </member>
+        <member name="T:Codecool.LifeOfAnts.Ants.Soldier">
+            <summary>
+            Soldier class
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Soldier.#ctor(Codecool.LifeOfAnts.Position)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Codecool.LifeOfAnts.Ants.Soldier"/> class.
+            </summary>
+            <param name="position"> Position of the ant </param>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Soldier.GetNextDirection">
+            <summary>
+            Gets new Soldier direction
+            </summary>
+            <returns>
+            Returns position
+            </returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Soldier.MakeMove">
+            <summary>
+            Moves ants
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Soldier.ToString">
+            <summary>
+            Soldier to string
+            </summary>
+            <returns>
+            Returns Worker symbol as string
+            </returns>
+        </member>
+        <member name="T:Codecool.LifeOfAnts.Ants.Worker">
+            <summary>
+            Worker class
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Worker.#ctor(Codecool.LifeOfAnts.Position)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Codecool.LifeOfAnts.Ants.Worker"/> class.
+            </summary>
+            <param name="position"> position of the ant </param>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Worker.MakeMove">
+            <summary>
+            Moves ants
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Ants.Worker.ToString">
+            <summary>
+            Worker to string
+            </summary>
+            <returns>
+            Returns Worker symbol as string
+            </returns>
+        </member>
+        <member name="T:Codecool.LifeOfAnts.Colony.AntColony">
+            <summary>
+            Ant colony class
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Colony.AntColony.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Codecool.LifeOfAnts.Colony.AntColony"/> class.
+            </summary>
+            <param name="width">width</param>
+        </member>
+        <member name="P:Codecool.LifeOfAnts.Colony.AntColony.DronesList">
+            <summary>
+            Gets or sets list of drones
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Colony.AntColony.CreateEmptyColony">
+            <summary>
+            Prints updated colony
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Colony.AntColony.UpdateAndPrintColony">
+            <summary>
+            Prints updated colony
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Colony.AntColony.UpdateColony">
+            <summary>
+            Updates colony
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Colony.AntColony.PrintColony">
+            <summary>
+            Prints colony
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Colony.AntColony.ValidStartingDroneAntCoordinates">
+            <summary>
+            Checks validity of initial position of Drones
+            </summary>
+            <returns>Returns initial position of Drones</returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Colony.AntColony.RandomPointInColony">
+            <summary>
+            Gets random position of ants in colony
+            </summary>
+            <returns>Returns random position point in colony</returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Colony.AntColony.GetWidth">
+            <summary>
+            Gets width of the colony
+            </summary>
+            <returns>Returns int</returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Colony.AntColony.GetTheQueen">
+            <summary>
+            Gets the Queen
+            </summary>
+            <returns>Returns The Queen</returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Colony.AntColony.GenerateAnts(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Generates Ants
+            </summary>
+            <param name="workers">number of workers</param>
+            <param name="soldiers">number of soldiers</param>
+            <param name="drones">number of drones</param>
+        </member>
+        <member name="T:Codecool.LifeOfAnts.Direction">
+            <summary>
+                Direction enum
+            </summary>
+        </member>
+        <member name="F:Codecool.LifeOfAnts.Direction.North">
+            <summary>
+                North direction
+            </summary>
+        </member>
+        <member name="F:Codecool.LifeOfAnts.Direction.East">
+            <summary>
+                East direction
+            </summary>
+        </member>
+        <member name="F:Codecool.LifeOfAnts.Direction.South">
+            <summary>
+                South direction
+            </summary>
+        </member>
+        <member name="F:Codecool.LifeOfAnts.Direction.West">
+            <summary>
+                West direction
+            </summary>
+        </member>
+        <member name="T:Codecool.LifeOfAnts.DirectionExtensions">
+            <summary>
+            Static class for Direction enum extension methods
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.DirectionExtensions.GetRandomDirection">
+            <summary>
+            Gets random Direction
+            </summary>
+            <returns> Returns Direction </returns>
+        </member>
+        <member name="T:Codecool.LifeOfAnts.Position">
+            <summary>
+                Position struct
+            </summary>
+        </member>
+        <member name="P:Codecool.LifeOfAnts.Position.X">
+            <summary>
+                Gets or sets X coordinate
+            </summary>
+        </member>
+        <member name="P:Codecool.LifeOfAnts.Position.Y">
+            <summary>
+                Gets or sets coordinate
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Position.#ctor(System.Int32,System.Int32)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Codecool.LifeOfAnts.Position"/> struct.
+            </summary>
+            <param name="x">X coordinate</param>
+            <param name="y">Y coordinate</param>
+            <param name="symbol">Symbol parameter</param>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Position.DistanceToCoordinate(Codecool.LifeOfAnts.Position)">
+            <summary>
+            Gets distance to the other coordinate
+            </summary>
+            <param name="other"> Coordinates</param>
+            <returns> Returns int </returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Position.NextCoordinatesInDirection(Codecool.LifeOfAnts.Direction)">
+            <summary>
+            Gets distance to the other coordinate
+            </summary>
+            <param name="direction"> Gets next direction </param>
+            <returns> Returns int </returns>
+        </member>
+        <member name="T:Codecool.LifeOfAnts.Img.View">
+            <summary>
+            Static class for View
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Img.View.PrintFile(System.String)">
+            <summary>
+            Static method for image printing
+            </summary>
+            <param name="fileName"> String with the filename</param>
+        </member>
+        <member name="T:Codecool.LifeOfAnts.Program">
+            <summary>
+                Simulation main class
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Program.Main">
+            <summary>
+                Main method
+            </summary>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Program.IsUpdated">
+            <summary>
+                Checks user input if go next
+            </summary>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Program.GetInput">
+            <summary>
+             Asks user for input
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:Codecool.LifeOfAnts.Program.CheckIfInt(System.String)">
+            <summary>
+             Asks user for input
+            </summary>
+            <param name="input">Input of the user</param>
+            <returns>bool</returns>
+        </member>
+    </members>
+</doc>
